@@ -37,6 +37,7 @@ Variasi TF-IDF:
 *   RF 80-20
 *   RF 70-30
 3. Long Short-Term Memory (LSTM)
+
 Jaringan neural berbasis sequential
 
 ## Preprocessing
@@ -51,3 +52,78 @@ Metrik Evaluasi
 3. Recall
 4. F1-Score
 
+## Performa Model
+**SVM dengan TF-IDF (80/20)**
+1. Akurasi Training: 0.9806 (98.06%)
+2. Akurasi Testing: 0.9375 (93.75%)
+3. Metrik per Kelas:
+| Kelas | Precision | Recall | F1-Score |  
+|-------|---------|---------|--------|  
+| Negatif | 0.91 | 0.74 | 0.82 |  
+| Netral | 0.86 | 0.84 | 0.90 |  
+| Positif | 0.98 | 0.97 | 0.98 |  
+
+**SVM dengan TF-IDF (60/40)**
+1. Akurasi Training: 0.9777 (97.77%)
+2. Akurasi Testing: 0.9587 (95.87%)
+3. Metrik per Kelas:
+| Kelas | Precision | Recall | F1-Score |  
+|-------|---------|---------|--------|  
+| Negatif | 0.94 | 0.83 | 0.88 |  
+| Netral | 0.91 | 0.95 | 0.93 |  
+| Positif | 0.99 | 0.98 | 0.98 |
+
+**Random Forest dengan TF-IDF (70/30)**
+1. Akurasi Training: 0.8888 (88.88%)
+2. Akurasi Testing: 0.8681 (86.81%)
+3. Metrik per Kelas:
+| Kelas | Precision | Recall | F1-Score |  
+|-------|---------|---------|--------|  
+| Negatif | 0.91 | 0.62 | 0.74 |  
+| Netral | 0.85 | 0.80 | 0.82 |  
+| Positif | 0.90 | 0.97 | 0.94 |
+
+**Random Forest dengan TF-IDF (80/20**)
+1. Akurasi Training: 0.8924 (89.24%)
+2. Akurasi Testing: 0.8672 (86.72%)
+3. Metrik per Kelas:
+| Kelas | Precision | Recall | F1-Score |  
+|-------|---------|---------|--------|  
+| Negatif | 0.90 | 0.64 | 0.75|  
+| Netral | 0.86 | 0.80| 0.83 |  
+| Positif | 0.90 | 0.98 | 0.94 |
+
+**LSTM dengan TF-IDF (70/20/10)**
+1. Akurasi Training: 0.99
+2. Akurasi Validasi: 0.96
+3. Metrik per Kelas:
+| Kelas | Precision | Recall | F1-Score |  
+|-------|---------|---------|--------|  
+| Negatif | 0.94 | 0.87 | 0.90|  
+| Netral | 0.91 | 0.94| 0.93 |  
+| Positif | 0.98 | 0.98 | 0.98|
+
+**SVM dengan BoW (80/20)**
+1. Akurasi Training: 0.99
+2. Akurasi Validasi: 0.96
+3. Metrik per Kelas:
+| Kelas | Precision | Recall | F1-Score |  
+|-------|---------|---------|--------|  
+| Negatif | 0.90 | 0.92 | 0.91|  
+| Netral | 0.93 | 0.94| 0.93 |  
+| Positif | 0.99 | 0.98 | 0.98|
+
+**SVM dengan N-Gram (80/20**)
+1. Akurasi Training: 0.96
+2. Akurasi Testing: 0.93
+3. Metrik per Kelas:
+| Kelas | Precision | Recall | F1-Score |  
+|-------|---------|---------|--------|  
+| Negatif | 0.81 | 0.87 | 0.84|  
+| Netral |0.87 | 0.91|0.89 |  
+| Positif | 0.98 | 0.95 | 0.97|
+
+## Kesimpulan
+*   LSTM dan SVM dengan TF-IDF menunjukkan performa terbaik
+*   Semua model memiliki akurasi di atas 90%
+*   Kelas Positif konsisten memiliki performa tertinggi
