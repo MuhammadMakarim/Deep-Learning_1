@@ -134,3 +134,7 @@ Metrik Evaluasi
 *   LSTM dan SVM dengan TF-IDF menunjukkan performa terbaik
 *   Semua model memiliki akurasi di atas 90%
 *   Kelas Positif konsisten memiliki performa tertinggi
+
+## 📝 Catatan
+1. Dataset lengkap bisa diakses pada link: https://drive.google.com/drive/folders/1jZWJBYjiz7sV5a8Xz2Uv8XS8nfkCOsuc?usp=sharing
+2. Models lengkap bisa diakses pada link: https://drive.google.com/drive/folders/10ZVid-v4oLQrOV5A86jqSfRujdYxG-xq?usp=sharing
